@@ -1,0 +1,11 @@
+[user]
+	name = "Barry Deeney"
+	email = "mxaddict@codedmaster.com"
+[diff]
+	external = git_vimdiff
+[pager]
+	diff =
+[color]
+	ui = auto
+[alias]
+	lg = log --graph --pretty=format:'%C(cyan)%h%C(reset) - %C(green)(%cr)%C(reset) %C(blue)<%an>%C(reset) %C(yellow)%d%C(reset) %s' --abbrev-commit --date=relative
