@@ -52,20 +52,3 @@ vno	<left>	<Nop>
 vno	<right>	<Nop>
 vno	<up>	<Nop>
 
-" Map Ctr + l to open next tab
-" Map Ctr + h to open previous tab
-" Map Ctr + t to open a new tab
-" Map Ctr + Shift + t to save and close current tab
-no	<C-h>	:tabprevious<CR>
-no	<C-l>	:tabnext<CR>
-no	<C-t>	:tabnew<CR>
-no	<C-S-t>	:wq<CR>
-ino	<C-h>	<Esc>:tabprevious<CR>
-ino	<C-l>	<Esc>:tabnext<CR>
-ino	<C-t>	<Esc>:tabnew<CR>
-ino	<C-S-t>	<Esc>:wq<CR>
-vno	<C-h>	:tabprevious<CR>
-vno	<C-l>	:tabnext<CR>
-vno	<C-t>	:tabnew<CR>
-vno	<C-S-t>	:wq<CR>
-
