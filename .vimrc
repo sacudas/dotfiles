@@ -76,3 +76,6 @@ vno	<left>	<Nop>
 vno	<right>	<Nop>
 vno	<up>	<Nop>
 
+" Time to load pathogen ( And Pathogen will load our submodules )
+execute pathogen#infect()
+
