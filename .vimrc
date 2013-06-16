@@ -55,6 +55,9 @@ set noexpandtab
 set tabstop=4
 set shiftwidth=4
 
+" Time to load pathogen ( And Pathogen will load our submodules )
+execute pathogen#infect()
+
 " Lets actually turn on syntax highlighting, might be usefull for coding :p
 syntax on
 
@@ -75,7 +78,4 @@ vno	<down>	<Nop>
 vno	<left>	<Nop>
 vno	<right>	<Nop>
 vno	<up>	<Nop>
-
-" Time to load pathogen ( And Pathogen will load our submodules )
-execute pathogen#infect()
 
