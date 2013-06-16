@@ -7,10 +7,28 @@ endif
 " Now that we have 256bit color, we can set our colorscheme
 color distinguished
 
+" Turn on auto indention
+set ai
+
+" turn on bracket matching/highlighting
+set showmatch
+
+" lets make the status size 2 so we can always see the last one
+set laststatus=2
+
+" lets make the backspace key work similar to the git-bash (WIN32 VIM) version
+set backspace=indent,eol,start
+
+" vi compatibility is lame... hahaha
+set nocompatible
+
+" lets show the mode so we can tell what the hell we are doing
+set showmode
+
 " We need line numbers right? :)
 set number
 
-" Turn on the ruler
+" Turn on the ruler so that we can always see the cursor position
 set ruler
 
 " Show the cursor's current line highlight
@@ -33,6 +51,9 @@ set list listchars=tab:\›\ ,trail:-,extends:>,precedes:<,eol:¬
 set noexpandtab
 set tabstop=4
 set shiftwidth=4
+
+" Lets actually turn on syntax highlighting, might be usefull for coding :p
+syntax on
 
 " Turn on plugin and indent support
 filetype plugin on
