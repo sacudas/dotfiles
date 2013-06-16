@@ -16,6 +16,9 @@ set showmatch
 " lets make the status size 2 so we can always see the last one
 set laststatus=2
 
+" Lets make a custom status format :)
+set statusline=%<%F%h%m%r\ [%{&ff}]\ (%{strftime(\"%H:%M\ %d/%m/%Y\",getftime(expand(\"%:p\")))})%=%l,%c%V\ %P
+
 " lets make the backspace key work similar to the git-bash (WIN32 VIM) version
 set backspace=indent,eol,start
 
