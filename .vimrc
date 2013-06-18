@@ -55,6 +55,9 @@ set noexpandtab
 set tabstop=4
 set shiftwidth=4
 
+" Wrapping is for noobs :D hahaha!
+set nowrap
+
 " Time to load pathogen ( And Pathogen will load our submodules )
 execute pathogen#infect()
 
