@@ -13,6 +13,7 @@ Bundle 'gmarik/vundle'
 "
 " original repos on github
 Bundle 'tobyS/pdv'
+Bundle 'SirVer/ultisnips'
 
 filetype plugin indent on     " required!
 "
