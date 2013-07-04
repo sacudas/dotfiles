@@ -12,6 +12,7 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
+Bundle 'tobyS/vmustache'
 Bundle 'tobyS/pdv'
 Bundle 'SirVer/ultisnips'
 
