@@ -1,4 +1,4 @@
-/**
+/*
  * Class: ${1:{{name}}}
  *{{#interfaces}}
  * @see {{name}}{{/interfaces}}{{#parent}}
