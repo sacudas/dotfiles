@@ -3,4 +3,4 @@
 	url = git@github.com:gmarik/vundle.git
 [submodule ".bash/bash-git-prompt"]
 	path = .bash/bash-git-prompt
-	url = git@github.com:magicmonty/bash-git-prompt.git
+	url = git@github-mxaddict.com:mxaddict/bash-git-prompt.git
