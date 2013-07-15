@@ -15,6 +15,7 @@ Bundle 'gmarik/vundle'
 Bundle 'tobyS/vmustache'
 Bundle 'tobyS/pdv'
 Bundle 'SirVer/ultisnips'
+Bundle 'joonty/vdebug'
 
 filetype plugin indent on     " required!
 "
