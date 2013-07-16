@@ -44,6 +44,9 @@ set cmdheight=2
 " Enable mouse so we can move splits and stuff
 set mouse=a
 
+" Enable system clipboard
+set clipboard=unnamed
+
 " Set encoded character set
 set encoding=utf-8
 
