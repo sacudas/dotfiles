@@ -7,16 +7,16 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Bundle 'git@github.com:gmarik/vundle.git'
 
 " My Bundles here:
 "
 " original repos on github
-Bundle 'tobyS/vmustache'
-Bundle 'tobyS/pdv'
-Bundle 'SirVer/ultisnips'
-Bundle 'joonty/vdebug'
-Bundle 'vim-scripts/greplace'
+Bundle 'git@github.com:tobyS/vmustache.git'
+Bundle 'git@github.com:tobyS/pdv.git'
+Bundle 'git@github.com:SirVer/ultisnips.git'
+Bundle 'git@github.com:joonty/vdebug.git'
+Bundle 'git@github.com:vim-scripts/greplace.vim.git'
 
 filetype plugin indent on     " required!
 "
