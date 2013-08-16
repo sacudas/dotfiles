@@ -16,6 +16,7 @@ Bundle 'tobyS/vmustache'
 Bundle 'tobyS/pdv'
 Bundle 'SirVer/ultisnips'
 Bundle 'joonty/vdebug'
+Bundle 'vim-scripts/greplace'
 
 filetype plugin indent on     " required!
 "
