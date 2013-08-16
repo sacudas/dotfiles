@@ -17,6 +17,7 @@ Bundle 'git@github.com:tobyS/pdv.git'
 Bundle 'git@github.com:SirVer/ultisnips.git'
 Bundle 'git@github.com:joonty/vdebug.git'
 Bundle 'git@github.com:vim-scripts/greplace.vim.git'
+Bundle 'git@github.com:airblade/vim-gitgutter.git'
 
 filetype plugin indent on     " required!
 "
