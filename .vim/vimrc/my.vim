@@ -85,3 +85,6 @@ vno	<up>	<Nop>
 " Convert Selenium selenese test into PHPUnit Selenium RC
 no	<leader>csw		:%s/\t//g<CR>:%s/\n//g<CR>:%s/\(.*\)<title>\(.*\)<\/title>\(.*\)<tbody>\(.*\)<\/tbody>\(.*\)/<?php\r<!--require the Sauceium.php file-->require_once "PHPUnit\/Extensions\/Sauceium.php";\r\rclass WU_\2\ Extends PHPUnit_Extensions_Sauceium {\r\rpublic function test_wu_\2() {\r<!--function_start-->\4<!--function_end-->}\r}\r/g<CR>:%s/<!--/\r<!--/g<CR>:%s/<!--\(.*\)-->/\/\/ \1\r/g<CR>:g/'/s/'/\\'/g<CR>:%s/<\/tr>/<\/tr>\r/g<CR>:%s/<tr><td>\(.*\)<\/td><td>\(.*\)<\/td><td>\(.*\)<\/td><\/tr>/\$this->\1('\2', '\3');\r/g<CR>:g/$this->open/s/&amp;/\&/g<CR>:g/$this->.*(.*, '+.*');/s/+/\\+/g<CR>:g/verify/s/verify/assert/g<CR>:g/assertLocation/s/assert/waitFor/g<CR>:g/$this->echo/s/\(.*\)/\/\/ \1/g<CR>:g/&[a-zA-Z]\+;/s/$this->\(.*\)('\(.*\)', '\(.*\)');/$this->\1(html_entity_decode('\2'), '\3');/g<CR>:%s/, ''//g<CR>:g/$this->pause/s/$this->pause(.*'\(.[0-9]*\).*');/usleep(\1000);/g<CR>:set filetype=php<CR>gg=G
 
+" Remove all trailing whitespace
+no	<leader>rw		:g/\s\+$/s/\s\+$//g<CR>
+
