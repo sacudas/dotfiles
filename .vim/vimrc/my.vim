@@ -50,6 +50,9 @@ set clipboard=unnamed
 " Set encoded character set
 set encoding=utf-8
 
+" Lets show what we are searching for, might help us a bit
+set hlsearch
+
 " Set some whitespace characters
 set list listchars=tab:\›\ ,trail:-,extends:>,precedes:<,eol:¬
 
