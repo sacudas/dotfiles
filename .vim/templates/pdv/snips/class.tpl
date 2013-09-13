@@ -5,5 +5,5 @@
  * @see {{name}}{{/parent}}{{#abstract}}
  * @abstract{{/abstract}}{{#final}}
  * @final{{/final}}
- * @author Barry Deeney <mxaddict@codedmaster.com>
+ * @author ${2:`!v g:snips_author`}
  */
