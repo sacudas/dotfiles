@@ -2,4 +2,4 @@
 let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 let g:UltiSnipsDontReverseSearchPath="1"
-let g:snips_author="Barry Deeney <mxaddicted@codedmaster.com>"
+let g:snips_author="Barry Deeney <mxaddict@codedmaster.com>"
