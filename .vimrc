@@ -7,5 +7,8 @@ source ~/.vim/vimrc/pdv.vim
 " source for ultisnips.vim
 source ~/.vim/vimrc/ultisnips.vim
 
+" source for vdebug.vim
+source ~/.vim/vimrc/vdebug.vim
+
 " source for my.vim
 source ~/.vim/vimrc/my.vim
