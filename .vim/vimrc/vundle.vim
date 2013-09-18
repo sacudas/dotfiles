@@ -18,6 +18,12 @@ Bundle 'git@github.com:SirVer/ultisnips.git'
 Bundle 'git@github.com:joonty/vdebug.git'
 Bundle 'git@github.com:vim-scripts/greplace.vim.git'
 Bundle 'git@github.com:airblade/vim-gitgutter.git'
+Bundle 'git@github.com:tpope/vim-fugitive.git'
+Bundle 'git@github.com:gregsexton/gitv.git'
+Bundle 'git@github.com:Lokaltog/powerline.git'
+Bundle 'git@github.com:scrooloose/syntastic.git'
+Bundle 'git@github.com:vim-scripts/Conque-Shell.git'
+Bundle 'git@github.com:vim-scripts/Emmet.vim.git'
 
 filetype plugin indent on     " required!
 "
