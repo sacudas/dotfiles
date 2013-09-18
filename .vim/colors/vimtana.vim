@@ -34,7 +34,7 @@ hi Identifier guifg=#f9ee98 guibg=NONE guisp=NONE gui=NONE ctermfg=229 ctermbg=N
 hi SpecialChar guifg=#f8f8f8 guibg=NONE guisp=NONE gui=NONE ctermfg=15 ctermbg=NONE cterm=NONE
 hi Conditional guifg=#cda869 guibg=NONE guisp=NONE gui=NONE ctermfg=179 ctermbg=NONE cterm=NONE
 hi StorageClass guifg=#f9ee98 guibg=NONE guisp=NONE gui=NONE ctermfg=229 ctermbg=NONE cterm=NONE
-hi Todo guifg=#5f5a60 guibg=NONE guisp=NONE gui=bold,italic ctermfg=59 ctermbg=NONE cterm=bold
+hi Todo guifg=#5f5a60 guibg=#ffaf00 guisp=NONE gui=bold,italic ctermfg=59 ctermbg=214 cterm=bold
 hi Special guifg=#f8f8f8 guibg=NONE guisp=NONE gui=NONE ctermfg=15 ctermbg=NONE cterm=NONE
 hi LineNr guifg=#868686 guibg=#2b2b2b guisp=#2b2b2b gui=NONE ctermfg=102 ctermbg=235 cterm=NONE
 hi StatusLine guifg=#f8f8f8 guibg=#565656 guisp=#565656 gui=bold ctermfg=15 ctermbg=240 cterm=bold
@@ -42,7 +42,7 @@ hi Normal guifg=#f8f8f8 guibg=#141414 guisp=#141414 gui=NONE ctermfg=15 ctermbg=
 hi Label guifg=#8f9d6a guibg=NONE guisp=NONE gui=NONE ctermfg=101 ctermbg=NONE cterm=NONE
 "hi CTagsImport -- no settings --
 hi PMenuSel guifg=NONE guibg=#3c4043 guisp=#3c4043 gui=NONE ctermfg=NONE ctermbg=238 cterm=NONE
-hi Search guifg=NONE guibg=NONE guisp=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
+hi Search guifg=#121212 guibg=#ffd700 guisp=NONE gui=bold ctermfg=233 ctermbg=220 cterm=bold
 "hi CTagsGlobalVariable -- no settings --
 hi Delimiter guifg=#f8f8f8 guibg=NONE guisp=NONE gui=NONE ctermfg=15 ctermbg=NONE cterm=NONE
 hi Statement guifg=#cda869 guibg=NONE guisp=NONE gui=NONE ctermfg=179 ctermbg=NONE cterm=NONE
@@ -86,7 +86,7 @@ hi Constant guifg=#cf6a4c guibg=NONE guisp=NONE gui=NONE ctermfg=173 ctermbg=NON
 hi Tag guifg=#9b703f guibg=NONE guisp=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
 hi String guifg=#8f9d6a guibg=NONE guisp=NONE gui=NONE ctermfg=101 ctermbg=NONE cterm=NONE
 hi PMenuThumb guifg=NONE guibg=#868686 guisp=#868686 gui=NONE ctermfg=NONE ctermbg=102 cterm=NONE
-hi MatchParen guifg=#cda869 guibg=NONE guisp=NONE gui=underline ctermfg=179 ctermbg=NONE cterm=underline
+hi MatchParen guifg=#121212 guibg=#ffd700 guisp=NONE gui=bold ctermfg=233 ctermbg=220 cterm=bold
 "hi LocalVariable -- no settings --
 hi Repeat guifg=#9b703f guibg=NONE guisp=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
 "hi SpellBad -- no settings --
