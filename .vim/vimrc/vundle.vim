@@ -22,8 +22,8 @@ Bundle 'git@github.com:tpope/vim-fugitive.git'
 Bundle 'git@github.com:gregsexton/gitv.git'
 Bundle 'git@github.com:bling/vim-airline.git'
 Bundle 'git@github.com:scrooloose/syntastic.git'
-Bundle 'git@github.com:vim-scripts/Conque-Shell.git'
-Bundle 'git@github.com:vim-scripts/Emmet.vim.git'
+Bundle 'git@github.com:kien/ctrlp.vim.git'
+"Bundle 'git@github.com:vim-scripts/Emmet.vim.git'
 
 filetype plugin indent on     " required!
 "
