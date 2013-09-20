@@ -13,5 +13,8 @@ source ~/.vim/vimrc/vdebug.vim
 " source for airline.vim
 source ~/.vim/vimrc/airline.vim
 
+" source for ctrlp.vim
+source ~/.vim/vimrc/ctrlp.vim
+
 " source for my.vim
 source ~/.vim/vimrc/my.vim
