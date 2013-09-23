@@ -1,6 +1,9 @@
 # Set default editor to vim
 export EDITOR="vim"
 
+# tell bash that we want to use the 256 color terminal
+export TERM=screen-256color;
+
 # add my ${HOME}/bin to the path
 export PATH=$PATH":/home/${USER}/bin/"
 
