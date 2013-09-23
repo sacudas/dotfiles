@@ -25,8 +25,8 @@ set backspace=indent,eol,start
 " vi compatibility is lame... hahaha
 set nocompatible
 
-" lets show the mode so we can tell what the hell we are doing
-set showmode
+" lets hide the mode as we are using vim-airline for this :)
+set noshowmode
 
 " We need line numbers right? :)
 set number
@@ -37,9 +37,10 @@ set ruler
 " Show the cursor's current line highlight
 set cursorline
 
-" Show the cmd and set height to 2
+" Show the cmd and set height to 1 cause it looks better now that we have tmux
+" setup to look like powerline/airline
 set showcmd
-set cmdheight=2
+set cmdheight=1
 
 " Enable mouse so we can move splits and stuff
 set mouse=a
