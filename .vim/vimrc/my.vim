@@ -170,9 +170,9 @@ no		<leader>o		:CtrlPTag<CR>
 " map leader+i
 no		<leader>i		:TagbarToggle<CR>
 
-" map leader+ctag to generate tags for the current PWD and place the file in
+" map leader+ct to generate tags for the current PWD and place the file in
 " our git directory so that it does not get seen by git status
-no		<leader>ct		:!ctag -R . -f .git/tags
+no		<leader>ct		:!ctags -R . -f .git/tags<CR>
 
 " Fast saving
 nmap	<leader>w		:w!<CR>
