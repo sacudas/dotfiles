@@ -43,7 +43,7 @@ set showcmd
 set cmdheight=1
 
 " Enable mouse so we can move splits and stuff
-set mouse=a
+"set mouse=a
 
 " Enable system clipboard
 set clipboard=unnamed
@@ -92,3 +92,8 @@ no	<leader>csw		:%s/\t//g<CR>:%s/\n//g<CR>:%s/\(.*\)<title>\(.*\)<\/title>\(.*\)
 " Remove all trailing whitespace
 no	<leader>rw		:g/\s\+$/s/\s\+$//g<CR>
 
+" ma leader+o to CtrlPTag search
+no	<leader>o		:CtrlPTag<CR>
+
+" map leader+i
+no	<leader>i		:TagbarToggle<CR>
