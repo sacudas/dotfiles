@@ -170,8 +170,12 @@ no		<leader>o		:CtrlPTag<CR>
 " map leader+i
 no		<leader>i		:TagbarToggle<CR>
 
+" map leader+ctag to generate tags for the current PWD and place the file in
+" our git directory so that it does not get seen by git status
+no		<leader>ct		:!ctag -R . -f .git/tags
+
 " Fast saving
-nmap	<leader>w		:w!<cr>
+nmap	<leader>w		:w!<CR>
 
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)
