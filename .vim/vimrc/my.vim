@@ -118,35 +118,35 @@ filetype plugin on
 filetype indent on
 
 " Disable arrow keys
-no	<down>	<Nop>
-no	<left>	<Nop>
-no	<right>	<Nop>
-no	<up>	<Nop>
-ino	<down>	<Nop>
-ino	<left>	<Nop>
-ino	<right>	<Nop>
-ino	<up>	<Nop>
-vno	<down>	<Nop>
-vno	<left>	<Nop>
-vno	<right>	<Nop>
-vno	<up>	<Nop>
+no		<down>	<Nop>
+no		<left>	<Nop>
+no		<right>	<Nop>
+no		<up>	<Nop>
+ino		<down>	<Nop>
+ino		<left>	<Nop>
+ino		<right>	<Nop>
+ino		<up>	<Nop>
+vno		<down>	<Nop>
+vno		<left>	<Nop>
+vno		<right>	<Nop>
+vno		<up>	<Nop>
 
 " Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
-nmap	<M-j> mz:m+<cr>`z
-nmap	<M-k> mz:m-2<cr>`z
-vmap	<M-j> :m'>+<cr>`<my`>mzgv`yo`z
-vmap	<M-k> :m'<-2<cr>`>my`<mzgv`yo`z
+nmap	<M-j>	mz:m+<cr>`z
+nmap	<M-k>	mz:m-2<cr>`z
+vmap	<M-j>	:m'>+<cr>`<my`>mzgv`yo`z
+vmap	<M-k>	:m'<-2<cr>`>my`<mzgv`yo`z
 
 " Visual mode pressing * or # searches for the current selection
 " Super useful! From an idea by Michael Naumann
-vno		<silent> * :call VisualSelection('f', '')<CR>
-vno		<silent> # :call VisualSelection('b', '')<CR>
+vno		<silent>	*	:call VisualSelection('f', '')<CR>
+vno		<silent>	#	:call VisualSelection('b', '')<CR>
 
 " Smart way to move between windows
-map		<C-j> <C-W>j
-map		<C-k> <C-W>k
-map		<C-h> <C-W>h
-map		<C-l> <C-W>l
+map		<C-j>	<C-W>j
+map		<C-k>	<C-W>k
+map		<C-h>	<C-W>h
+map		<C-l>	<C-W>l
 
 " map Ctrl+\ to open the tag in a new tab
 no		<C-\>			:tab split<CR>:exec("tag ".expand("<cword>"))<CR>
