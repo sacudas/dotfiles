@@ -11,6 +11,10 @@ color vimtana
 set autoindent
 set smartindent
 
+" set scrolloff to 8 so that we always have atleast 8 lines between cursor and end
+" of screen in VIM while editing
+set scrolloff=8
+
 " Add a bit extra margin to the left
 set foldcolumn=1
 
@@ -68,7 +72,7 @@ endif
 " Ignore case when searching
 set ignorecase
 
-" When searching try to be smart about cases 
+" When searching try to be smart about cases
 set smartcase
 
 " Enable mouse so we can move splits and stuff
@@ -80,6 +84,9 @@ set clipboard=unnamed
 " Set encoded character set
 set encoding=utf-8
 
+" Use Unix as the standard file type
+set fileformats=unix,dos,mac
+
 " Lets show what we are searching for, might help us a bit
 set hlsearch
 
@@ -87,7 +94,7 @@ set hlsearch
 set incsearch
 
 " Don't redraw while executing macros (good performance config)
-set lazyredraw 
+set lazyredraw
 
 " For regular expressions turn magic on
 set magic
@@ -163,5 +170,33 @@ no		<leader>o		:CtrlPTag<CR>
 " map leader+i
 no		<leader>i		:TagbarToggle<CR>
 
+" Fast saving
+nmap	<leader>w		:w!<cr>
+
+" :W sudo saves the file 
+" (useful for handling the permission-denied error)
+command W w !sudo tee % > /dev/null
+
+" FUNCTION FOR VISUAL SECTION SEARCHING
+function! VisualSelection(direction, extra_filter) range
+	let l:saved_reg = @"
+	execute "normal! vgvy"
+
+	let l:pattern = escape(@", '\\/.*$^~[]')
+	let l:pattern = substitute(l:pattern, "\n$", "", "")
+
+	if a:direction == 'b'
+		execute "normal ?" . l:pattern . "^M"
+	elseif a:direction == 'gv'
+		call CmdLine("vimgrep " . '/'. l:pattern . '/' . ' **/*.' . a:extra_filter)
+	elseif a:direction == 'replace'
+		call CmdLine("%s" . '/'. l:pattern . '/')
+	elseif a:direction == 'f'
+		execute "normal /" . l:pattern . "^M"
+	endif
+
+	let @/ = l:pattern
+	let @" = l:saved_reg
+endfunction
 
 " END OF FILE
