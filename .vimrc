@@ -1,6 +1,9 @@
 " source for vundle.vim
 source ~/.vim/vimrc/vundle.vim
 
+" source for ycm.vim
+source ~/.vim/vimrc/ycm.vim
+
 " source for pdv.vim
 source ~/.vim/vimrc/pdv.vim
 
