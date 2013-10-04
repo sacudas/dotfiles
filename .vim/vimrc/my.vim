@@ -178,7 +178,7 @@ no		<leader>ct		:Ctags
 nmap	<leader>w		:w!<CR>
 
 " Create a command for generating ctags in the current working directory
-command Ctags !ctags -R -f ./tags ./ >/dev/null 2>&1 &
+command Ctags !ctags -R -f --fields=+l ./tags ./ >/dev/null 2>&1 &
 
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
