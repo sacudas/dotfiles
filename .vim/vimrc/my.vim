@@ -172,14 +172,23 @@ no		<leader>i		:TagbarToggle<CR>
 
 " map leader+ct to generate tags for the current PWD and place the file in
 " our git directory so that it does not get seen by git status
-no		<leader>ct		:!ctags -R -f ./.git/tags .<CR>
+no		<leader>ct		:Ctags
 
 " Fast saving
 nmap	<leader>w		:w!<CR>
 
-" :W sudo saves the file 
+" Create a command for generating ctags in the current working directory
+command Ctags !ctags -R -f ./tags ./ >/dev/null 2>&1 &
+
+" :W sudo saves the file
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
+
+" lets clean the file before we save it!
+autocmd BufWritePre,FileWritePre * :g/\s\+$/s/\s\+$//g
+
+" lets generate the tags file when we make changes to a file
+autocmd BufWritePost,FileWritePost * silent :Ctags
 
 " FUNCTION FOR VISUAL SECTION SEARCHING
 function! VisualSelection(direction, extra_filter) range
