@@ -184,6 +184,9 @@ command Ctags !ctags -R --fields=+l -f ./tags ./ >/dev/null 2>&1 &
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
+" Lets make sure we are using the right omnifunc for PHP
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
 " lets clean the file before we save it!
 autocmd BufWritePre,FileWritePre * :g/\s\+$/s/\s\+$//g
 
