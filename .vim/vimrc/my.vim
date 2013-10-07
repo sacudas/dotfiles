@@ -87,6 +87,9 @@ set encoding=utf-8
 " Use Unix as the standard file type
 set fileformats=unix,dos,mac
 
+" lets configure the completeopt settings to make the menu work better/faster
+set completeopt=longest,menuone
+
 " Lets show what we are searching for, might help us a bit
 set hlsearch
 
