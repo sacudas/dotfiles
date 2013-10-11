@@ -7,6 +7,12 @@ export TERM=screen-256color;
 # add my ${HOME}/bin to the path
 export PATH=$PATH":/home/${USER}/bin/"
 
+# add my ${HOME}/android-sdks/tools to the path
+export PATH=$PATH":/home/${USER}/android-sdks/tools/"
+
+# add my ${HOME}/android-sdks/platform-tools to the path
+export PATH=$PATH":/home/${USER}/android-sdks/platform-tools/"
+
 export GIT_PROMPT_START="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[00m\]"
 export GIT_PROMPT_END="\[\033[01;34m\] \$\[\033[00m\] "
 
