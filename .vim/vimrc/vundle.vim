@@ -13,7 +13,8 @@ Bundle 'git@github.com:gmarik/vundle.git'
 "
 " original repos on github
 Bundle 'git@github.com:Valloric/YouCompleteMe.git'
-Bundle 'git@github.com:shawncplus/phpcomplete.vim.git'
+"Bundle 'git@github.com:shawncplus/phpcomplete.vim.git' (Disabled for now,
+"cause i'm trying out Eclim)
 Bundle 'git@github.com:tobyS/vmustache.git'
 Bundle 'git@github.com:tobyS/pdv.git'
 Bundle 'git@github.com:SirVer/ultisnips.git'
