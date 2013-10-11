@@ -4,6 +4,9 @@ source ~/.vim/vimrc/vundle.vim
 " source for ycm.vim
 source ~/.vim/vimrc/ycm.vim
 
+" source for eclim.vim
+source ~/.vim/vimrc/eclim.vim
+
 " source for pdv.vim
 source ~/.vim/vimrc/pdv.vim
 
