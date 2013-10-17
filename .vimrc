@@ -7,6 +7,9 @@ source ~/.vim/vimrc/ycm.vim
 " source for eclim.vim
 source ~/.vim/vimrc/eclim.vim
 
+" source for gitgutter.vim
+source ~/.vim/vimrc/gitgutter.vim
+
 " source for pdv.vim
 source ~/.vim/vimrc/pdv.vim
 
