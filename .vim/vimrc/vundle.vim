@@ -13,8 +13,7 @@ Bundle 'git@github.com:gmarik/vundle.git'
 "
 " original repos on github
 Bundle 'git@github.com:Valloric/YouCompleteMe.git'
-"Bundle 'git@github.com:shawncplus/phpcomplete.vim.git' (Disabled for now,
-"cause i'm trying out Eclim)
+Bundle 'git@github.com:shawncplus/phpcomplete.vim.git'
 Bundle 'git@github.com:tobyS/vmustache.git'
 Bundle 'git@github.com:tobyS/pdv.git'
 Bundle 'git@github.com:SirVer/ultisnips.git'
@@ -26,7 +25,6 @@ Bundle 'git@github.com:bling/vim-airline.git'
 Bundle 'git@github.com:scrooloose/syntastic.git'
 Bundle 'git@github.com:kien/ctrlp.vim.git'
 Bundle 'git@github.com:majutsushi/tagbar.git'
-"Bundle 'git@github.com:vim-scripts/greplace.vim.git'
 "Bundle 'git@github.com:vim-scripts/Emmet.vim.git'
 
 filetype plugin indent on     " required!
