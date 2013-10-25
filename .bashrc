@@ -13,6 +13,9 @@ export PATH=$PATH":/home/${USER}/android-sdks/tools/"
 # add my ${HOME}/android-sdks/platform-tools to the path
 export PATH=$PATH":/home/${USER}/android-sdks/platform-tools/"
 
+# add my ${HOME}/android-sdks/ as ANDROID_HOME so that android studio will work nicely
+export ANDROID_HOME="/home/${USER}/android-sdks/"
+
 export GIT_PROMPT_START="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[00m\]"
 export GIT_PROMPT_END="\[\033[01;34m\] \$\[\033[00m\] "
 
