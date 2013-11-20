@@ -16,6 +16,9 @@ export PATH=$PATH":/home/${USER}/android-sdks/platform-tools/"
 # add my ${HOME}/android-sdks/ as ANDROID_HOME so that android studio will work nicely
 export ANDROID_HOME="/home/${USER}/android-sdks/"
 
+# we need an alias for a quick hibernate command that also locks that screen
+alias hibernate='sudo echo "Hibernating..."; gnome-screensaver-command -l; sudo pm-hibernate;'
+
 # enable programmable completion features
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 	. /etc/bash_completion
