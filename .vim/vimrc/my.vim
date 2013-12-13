@@ -189,12 +189,20 @@ command W w !sudo tee % > /dev/null
 
 " Lets make sure we are using the right omnifunc for PHP
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+"autocmd FileType c set omnifunc=ccomplete#Complete
+"autocmd FileType cpp set omnifunc=cppcomplete#CompleteCPP
 
 " lets clean the file before we save it!
 autocmd BufWritePre,FileWritePre * :g/\s\+$/s/\s\+$//g
 
 " lets generate the tags file when we make changes to a file
-autocmd BufWritePost,FileWritePost * silent :Ctags
+" Disable the Auto ctags generation as was not working correctly for me
+"autocmd BufWritePost,FileWritePost * silent :Ctags
 
 " FUNCTION FOR VISUAL SECTION SEARCHING
 function! VisualSelection(direction, extra_filter) range
