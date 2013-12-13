@@ -26,6 +26,7 @@ Bundle 'git@github.com:scrooloose/syntastic.git'
 Bundle 'git@github.com:kien/ctrlp.vim.git'
 Bundle 'git@github.com:majutsushi/tagbar.git'
 Bundle 'git@github.com:tpope/vim-surround.git'
+Bundle 'git@github.com:tomtom/tcomment_vim.git'
 "Bundle 'git@github.com:vim-scripts/Emmet.vim.git'
 
 filetype plugin indent on     " required!
