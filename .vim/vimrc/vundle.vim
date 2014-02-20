@@ -12,6 +12,7 @@ Bundle 'git@github.com:gmarik/vundle.git'
 " My Bundles here:
 "
 " original repos on github
+Bundle 'git@github.com:edkolev/promptline.vim'
 Bundle 'git@github.com:Valloric/YouCompleteMe.git'
 Bundle 'git@github.com:shawncplus/phpcomplete.vim.git'
 Bundle 'git@github.com:tobyS/vmustache.git'
