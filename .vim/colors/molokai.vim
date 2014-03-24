@@ -1,6 +1,6 @@
 " Vim color file
 "
-" Author: Tomas Restrepo &lt;tomas@winterdom.com&gt;
+" Author: Tomas Restrepo <tomas@winterdom.com>
 "
 " Note: Based on the monokai theme for textmate
 " by Wimer Hazenberg and its darker variant
@@ -10,7 +10,7 @@
 hi clear
 
 set background=dark
-if version &gt; 580
+if version > 580
     " no guarantees for version 5.8 and below, but this makes it stop
     " complaining
     hi clear
@@ -134,7 +134,7 @@ end
 "
 " Support for 256-color terminal
 "
-if &amp;t_Co &gt; 255
+if &t_Co > 255
    if s:molokai_original == 1
       hi Normal                   ctermbg=234
       hi CursorLine               ctermbg=235   cterm=none
@@ -232,7 +232,7 @@ if &amp;t_Co &gt; 255
 
    hi SpecialKey      ctermfg=59
 
-   if exists("g:rehash256") &amp;&amp; g:rehash256 == 1
+   if exists("g:rehash256") && g:rehash256 == 1
        hi Normal       ctermfg=252 ctermbg=234
        hi CursorLine               ctermbg=236   cterm=none
        hi CursorLineNr ctermfg=208               cterm=none
