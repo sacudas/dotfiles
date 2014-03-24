@@ -26,6 +26,9 @@ set noswapfile
 " turn on bracket matching/highlighting
 set showmatch
 
+" i want to have spell check cause i can't spellllsss welllsss
+set spell spelllang=en_us
+
 " lets make the status size 2 so we can always see the last one
 set laststatus=2
 
