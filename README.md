@@ -8,7 +8,7 @@ Uses
 
 Features
 ---
-	- Has my custom TMUX statusline (Looks like tmux-powerline
+	- Has my custom TMUX statusline (Looks like tmux-powerline)
 	- Has my custom bash prompt (Integrated with GIT to show branch and current status summary)
 	- Has vdebug for Easy XDEBUG Integration
 	- Has ultisnips for nice snippets (Good Enough for me!)
