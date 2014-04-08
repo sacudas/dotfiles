@@ -4,3 +4,6 @@
 
 # Ignore the tags file
 tags
+
+# we need to ignore the Mac .DS_Store file
+.DS_Store
