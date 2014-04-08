@@ -14,3 +14,4 @@ Features
 	- Has ultisnips for nice snippets (Good Enough for me!)
 	- Has Git Gutter so that i can see my current changes to the open buffer
 	- Has my custom vimrc config
+	- Is now Compatible with MAC Bash!
