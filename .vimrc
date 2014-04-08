@@ -25,5 +25,8 @@ source ~/.vim/vimrc/airline.vim
 " source for ctrlp.vim
 source ~/.vim/vimrc/ctrlp.vim
 
+" source for promptline.vim
+source ~/.vim/vimrc/promptline.vim
+
 " source for my.vim
 source ~/.vim/vimrc/my.vim
