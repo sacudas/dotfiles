@@ -24,5 +24,3 @@ fi
 # load up the custom CLI PROMPT
 source ~/.promptline.sh
 
-# we need to clear the screen
-clear
