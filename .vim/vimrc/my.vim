@@ -11,14 +11,14 @@ color vimtana
 set autoindent
 set smartindent
 
-" set scrolloff to 8 so that we always have atleast 8 lines between cursor and end
+" set scrolloff to 8 so that we always have at least 8 lines between cursor and end
 " of screen in VIM while editing
 set scrolloff=8
 
 " Add a bit extra margin to the left
 set foldcolumn=1
 
-" Turn backup off, since most stuff is in SVN, git et.c anyway...
+" Turn backup off, since most stuff is in SVN, git ,etc.. anyway...
 set nobackup
 set nowb
 set noswapfile
@@ -26,8 +26,8 @@ set noswapfile
 " turn on bracket matching/highlighting
 set showmatch
 
-" i want to have spell check cause i can't spellllsss welllsss
-set spell spelllang=en_us
+" set spelling language, but don't enable it by default cause it's annoying
+set nospell spelllang=en_us
 
 " lets make the status size 2 so we can always see the last one
 set laststatus=2
