@@ -57,7 +57,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # load up the custom CLI PROMPT
-[[ -s ~/.promptline ]] && source ~/.promptline.sh
+[[ -s ~/.promptline.sh ]] && source ~/.promptline.sh
 
 # Load RVM into a shell session *as a function*
 [[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
