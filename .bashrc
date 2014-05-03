@@ -7,6 +7,9 @@ export TERM=screen-256color;
 # add my ${HOME}/bin to the path
 export PATH=$PATH":${HOME}/.bin/"
 
+# add my RVM tools to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin"
+
 # add my android tools to the path
 export PATH=$PATH":${HOME}/.sdks/android/tools/"
 
@@ -54,5 +57,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # load up the custom CLI PROMPT
-source ~/.promptline.sh
+[[ -s ~/.promptline ]] && source ~/.promptline.sh
+
+# Load RVM into a shell session *as a function*
+[[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
 
