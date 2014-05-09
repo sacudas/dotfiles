@@ -81,8 +81,10 @@ set smartcase
 " Enable mouse so we can move splits and stuff
 set mouse=a
 
-" Enable system clipboard
-set clipboard=unnamed
+" Enable system clipboard IF TMUX is not used
+if $TMUX == ''
+    set clipboard+=unnamed
+endif
 
 " Set encoded character set
 set encoding=utf-8
