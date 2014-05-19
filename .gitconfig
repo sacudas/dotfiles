@@ -2,7 +2,7 @@
 	name = "Barry Deeney"
 	email = "mxaddict@codedmaster.com"
 [diff]
-	external = git_vimdiff
+	external = git-vimdiff
 [pager]
 	diff =
 [color]
