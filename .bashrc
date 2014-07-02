@@ -56,3 +56,6 @@ fi
 # load up the custom CLI PROMPT
 [[ -s ~/.promptline.sh ]] && source ~/.promptline.sh
 
+# load the rails bash configs
+[[ -s /etc/profile.d/rvm.sh ]] && source /etc/profile.d/rvm.sh
+
