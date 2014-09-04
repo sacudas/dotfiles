@@ -7,29 +7,30 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'git@github.com:gmarik/vundle.git'
+Bundle 'gmarik/vundle'
 
 " My Bundles here:
 "
 " original repos on github
-Bundle 'git@github.com:edkolev/promptline.vim.git'
-Bundle 'git@github.com:tobyS/vmustache.git'
-Bundle 'git@github.com:tobyS/pdv.git'
-Bundle 'git@github.com:SirVer/ultisnips.git'
-Bundle 'git@github.com:airblade/vim-gitgutter.git'
-Bundle 'git@github.com:bling/vim-airline.git'
-Bundle 'git@github.com:scrooloose/syntastic.git'
-Bundle 'git@github.com:kien/ctrlp.vim.git'
-Bundle 'git@github.com:tpope/vim-surround.git'
-Bundle 'git@github.com:tomtom/tcomment_vim.git'
-Bundle 'git@github.com:shawncplus/phpcomplete.vim.git'
-Bundle 'git@github.com:Valloric/YouCompleteMe.git'
-Bundle 'git@github.com:kchmck/vim-coffee-script.git'
-"Bundle 'git@github.com:tpope/vim-fugitive.git'
-"Bundle 'git@github.com:gregsexton/gitv.git'
-"Bundle 'git@github.com:joonty/vdebug.git'
-"Bundle 'git@github.com:majutsushi/tagbar.git'
-"Bundle 'git@github.com:vim-scripts/Emmet.vim.git'
+Bundle 'SirVer/ultisnips'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'bling/vim-airline'
+Bundle 'edkolev/promptline.vim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'shawncplus/phpcomplete.vim'
+Bundle 'tobyS/pdv'
+Bundle 'tobyS/vmustache'
+Bundle 'tomtom/tcomment_vim'
+Bundle 'tpope/vim-surround'
+"Bundle 'gregsexton/gitv'
+"Bundle 'joonty/vdebug'
+"Bundle 'majutsushi/tagbar'
+"Bundle 'tpope/vim-fugitive'
+"Bundle 'vim-scripts/Emmet.vim'
 
 filetype plugin indent on     " required!
 "
