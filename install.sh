@@ -21,11 +21,13 @@ cp -r .promptline.sh     ~/
 cp -r .ssh/              ~/
 cp -r .tmux.conf         ~/
 cp -r .vim/              ~/
-cp -r .vimrc             ~/
 
 # Install Vim Plugins
 vim +BundleClean +qall
 vim +BundleUpdate +qall
+
+# Copy the VIMRC file after bundle install so that we don't get errors!
+cp -r .vimrc             ~/
 
 # Go to the YouCompleteMe DIR and compile and install it!
 ~/.vim/bundle/YouCompleteMe/install.sh --clang-completer
