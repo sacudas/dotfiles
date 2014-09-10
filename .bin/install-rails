@@ -1,2 +1,0 @@
-#!/bin/sh
-sudo gem install bundler rails --no-user-install --no-document
