@@ -6,10 +6,12 @@
 
 # Initilize the git submodules
 # and update them!
-git submodule init
-git submodule update
+echo "Initilize repo submodules!"
+git submodule init > /dev/null 2>&1
+git submodule update > /dev/null 2>&1
 
 # Copy all the files needed
+echo "Copy all the files needed"
 cp -r .bash_profile      ~/
 cp -r .bashrc            ~/
 cp -r .bin/              ~/
@@ -22,12 +24,36 @@ cp -r .ssh/              ~/
 cp -r .tmux.conf         ~/
 cp -r .vim/              ~/
 
+# Ask what name to use?
+echo "Git Name [Default: $(git config --global user.name)]:"
+read GIT_NAME
+
+# Ask what email to use?
+echo "Git Email [Default: $(git config --global user.email)]:"
+read GIT_EMAIL
+
+# Save the GIT_NAME
+echo "Save the GIT_NAME"
+if [ "$GIT_NAME" != "" ]; then
+	git config --global user.name "$GIT_NAME"
+fi
+
+# Save the GIT_EMAIL
+echo "Save the GIT_EMAIL"
+if [ "$GIT_EMAIL" != "" ]; then
+	git config --global user.email "$GIT_EMAIL"
+fi
+
 # Install Vim Plugins
-vim +BundleClean +qall
-vim +BundleUpdate +qall
+echo "Install Vim Plugins, Will take a while depending on connection speed!"
+vim +BundleClean +qall > /dev/null 2>&1
+vim +BundleUpdate +qall > /dev/null 2>&1
 
 # Copy the VIMRC file after bundle install so that we don't get errors!
+echo "Copy the VIMRC file after bundle install so that we don't get errors!"
 cp -r .vimrc             ~/
 
 # Go to the YouCompleteMe DIR and compile and install it!
-~/.vim/bundle/YouCompleteMe/install.sh --clang-completer
+echo "Go to the YouCompleteMe DIR and compile and install it!"
+echo "This will also take a while, depending on CPU speed AND connection speed!"
+~/.vim/bundle/YouCompleteMe/install.sh --clang-completer > /dev/null 2>&1
