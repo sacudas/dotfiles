@@ -11,8 +11,7 @@ git submodule init > /dev/null 2>&1
 git submodule update > /dev/null 2>&1
 
 # Copy all the files needed
-echo "Copy all the files needed"
-cp -r .bash_profile      ~/
+echo "Copy all the files needed" cp -r .bash_profile      ~/
 cp -r .bashrc            ~/
 cp -r .bin/              ~/
 cp -r .config/           ~/
@@ -33,14 +32,14 @@ echo "Git Email [Default: $(git config --global user.email)]:"
 read GIT_EMAIL
 
 # Save the GIT_NAME
-echo "Save the GIT_NAME"
 if [ "$GIT_NAME" != "" ]; then
+	echo "Save the GIT_NAME: $GIT_NAME"
 	git config --global user.name "$GIT_NAME"
 fi
 
 # Save the GIT_EMAIL
-echo "Save the GIT_EMAIL"
 if [ "$GIT_EMAIL" != "" ]; then
+echo "Save the GIT_EMAIL: $GIT_EMAIL"
 	git config --global user.email "$GIT_EMAIL"
 fi
 
