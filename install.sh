@@ -44,6 +44,9 @@ printf "Save the GIT_EMAIL: $GIT_EMAIL\n"
 	git config --global user.email "$GIT_EMAIL"
 fi
 
+# Setup the vimrc for temporary use!
+echo "source ~/.vim/vimrc/vundle.vim" > ~/.vimrc
+
 # Install Vim Plugins
 printf "Install Vim Plugins, Will take a while depending on connection speed!\n"
 vim +BundleClean +qall > /dev/null 2>&1
