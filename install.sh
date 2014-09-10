@@ -57,3 +57,6 @@ cp -r .vimrc             ~/
 echo "Go to the YouCompleteMe DIR and compile and install it!"
 echo "This will also take a while, depending on CPU speed AND connection speed!"
 ~/.vim/bundle/YouCompleteMe/install.sh --clang-completer > /dev/null 2>&1
+
+# Install done! WEW!
+echo "Install DONE! WEW!"
