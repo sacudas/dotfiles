@@ -124,7 +124,7 @@ function! s:HL(group, fg, ...)
 			let histring .= 'gui=NONE cterm=NONE '
 		else
 			let histring .= 'gui=' . a:2 . ' cterm=' . a:2 . ' '
-	endif
+		endif
 	else
 		let histring .= 'gui=NONE cterm=NONE '
 	endif
@@ -164,7 +164,7 @@ if version >= 700
 	call s:HL('TabLine', 'dark4', 'bg')
 
 	" Match paired bracket under the cursor
-"	call s:HL('MatchParen', 'orange', 'dark3', 'bold')
+	"	call s:HL('MatchParen', 'orange', 'dark3', 'bold')
 	call s:HL('MatchParen', 'none', 'dark3', 'bold')
 endif
 
@@ -175,7 +175,7 @@ if version >= 703
 	" Concealed element: \lambda → λ"
 	call s:HL('Conceal', 'blue', 'none')"
 
-	" Line number of CursorLine 
+	" Line number of CursorLine
 	call s:HL('CursorLineNr', 'yellow', 'dark1')
 endif
 
@@ -366,23 +366,23 @@ call s:HL('IndentGuidesEven', 'bg', 'dark3', 'inverse')
 " Better Rainbow Parentheses: {{{
 
 let g:rbpt_colorpairs = [
-    \ ['brown',       '#458588'],
-    \ ['Darkblue',    '#b16286'],
-    \ ['darkgray',    '#cc241d'],
-    \ ['darkgreen',   '#d65d0e'],
-    \ ['darkcyan',    '#458588'],
-    \ ['darkred',     '#b16286'],
-    \ ['darkmagenta', '#cc241d'],
-    \ ['brown',       '#d65d0e'],
-    \ ['gray',        '#458588'],
-    \ ['black',       '#b16286'],
-    \ ['darkmagenta', '#cc241d'],
-    \ ['Darkblue',    '#d65d0e'],
-    \ ['darkgreen',   '#458588'],
-    \ ['darkcyan',    '#b16286'],
-    \ ['darkred',     '#cc241d'],
-    \ ['red',         '#d65d0e'],
-    \ ]
+			\ ['brown',       '#458588'],
+			\ ['Darkblue',    '#b16286'],
+			\ ['darkgray',    '#cc241d'],
+			\ ['darkgreen',   '#d65d0e'],
+			\ ['darkcyan',    '#458588'],
+			\ ['darkred',     '#b16286'],
+			\ ['darkmagenta', '#cc241d'],
+			\ ['brown',       '#d65d0e'],
+			\ ['gray',        '#458588'],
+			\ ['black',       '#b16286'],
+			\ ['darkmagenta', '#cc241d'],
+			\ ['Darkblue',    '#d65d0e'],
+			\ ['darkgreen',   '#458588'],
+			\ ['darkcyan',    '#b16286'],
+			\ ['darkred',     '#cc241d'],
+			\ ['red',         '#d65d0e'],
+			\ ]
 
 "}}}
 

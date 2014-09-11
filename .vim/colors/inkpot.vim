@@ -11,7 +11,7 @@
 set background=dark
 hi clear
 if exists("syntax_on")
-   syntax reset
+    syntax reset
 endif
 
 let colors_name = "inkpot"
@@ -212,6 +212,4 @@ else
         exec "hi MatchParen     cterm=NONE ctermbg=" . <SID>X(14) . "ctermfg=" . <SID>X(25)
     endif
 endif
-
-" vim: set et :
 

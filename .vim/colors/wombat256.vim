@@ -237,9 +237,9 @@ call <SID>X("Normal",		"cccccc",	"151515",	"none")
 call <SID>X("Cursor",		"222222",	"ecee90",	"none")
 call <SID>X("CursorLine",	"",			"32322e",	"none")
 call <SID>X("CursorColumn",	"",			"2d2d2d",	"")
-			"CursorIM
-			"Question
-			"IncSearch
+"CursorIM
+"Question
+"IncSearch
 call <SID>X("Search",		"d787ff",	"5f5f5f",	"")
 call <SID>X("MatchParen",	"ecee90",	"857b6f",	"bold")
 call <SID>X("SpecialKey",	"6c6c6c",	"000000",	"none")
@@ -250,10 +250,10 @@ call <SID>X("Title",		"f6f3e8",	"",			"bold")
 call <SID>X("VertSplit",	"444444",	"444444",	"none")
 call <SID>X("StatusLine",	"f6f3e8",	"444444",	"italic")
 call <SID>X("StatusLineNC",	"857b6f",	"444444",	"none")
-			"Scrollbar
-			"Tooltip
-			"Menu
-			"WildMenu
+"Scrollbar
+"Tooltip
+"Menu
+"WildMenu
 call <SID>X("Pmenu",		"f6f3e8",	"444444",	"")
 call <SID>X("PmenuSel",		"121212",	"caeb82",	"")
 call <SID>X("WarningMsg",	"ff0000",	"",			"")
@@ -279,9 +279,9 @@ call <SID>X("PreProc",		"e5786d",	"",			"none")
 call <SID>X("Type",			"caeb82",	"",			"none")
 call <SID>X("Special",		"ffdead",	"",			"none")
 call <SID>X("Todo",			"857b6f",	"",			"italic")
-			"Underlined
-			"Error
-			"Ignore
+"Underlined
+"Error
+"Ignore
 
 hi! link VisualNOS	Visual
 hi! link NonText	LineNr

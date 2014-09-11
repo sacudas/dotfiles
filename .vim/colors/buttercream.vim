@@ -1,5 +1,4 @@
 " Vim color file
-" vim: tw=0 ts=8 sw=4
 " Scriptname:	buttercream
 " Maintainer:	Håkan Wikström <hakan@prinsig.se>
 " Version:	1.1

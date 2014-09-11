@@ -6,7 +6,7 @@ set background=dark
 hi clear
 
 if exists("syntax_on")
-  syntax reset
+	syntax reset
 endif
 
 let colors_name = "wombat"
@@ -14,11 +14,11 @@ let colors_name = "wombat"
 
 " Vim >= 7.0 specific colors
 if version >= 700
-  hi CursorLine guibg=#2d2d2d ctermbg=236
-  hi CursorColumn guibg=#2d2d2d ctermbg=236
-  hi MatchParen guifg=#f6f3e8 ctermfg=7 guibg=#857b6f ctermbg=243 gui=bold
-  hi Pmenu 		guifg=#f6f3e8 ctermfg=7 guibg=#444444 ctermbg=238
-  hi PmenuSel 	guifg=#000000 ctermfg=0 guibg=#cae682 ctermbg=186
+	hi CursorLine guibg=#2d2d2d ctermbg=236
+	hi CursorColumn guibg=#2d2d2d ctermbg=236
+	hi MatchParen guifg=#f6f3e8 ctermfg=7 guibg=#857b6f ctermbg=243 gui=bold
+	hi Pmenu 		guifg=#f6f3e8 ctermfg=7 guibg=#444444 ctermbg=238
+	hi PmenuSel 	guifg=#000000 ctermfg=0 guibg=#cae682 ctermbg=186
 endif
 
 " General colors

@@ -8,7 +8,7 @@
 set background=dark
 highlight clear
 if exists("syntax_on")
-  syntax reset
+	syntax reset
 endif
 let colors_name = "liquidcarbon"
 " 1}}}
@@ -16,13 +16,13 @@ let colors_name = "liquidcarbon"
 " Normal Color {{{1
 " ============================================================================
 if exists("g:liquidcarbon_high_contrast") && g:liquidcarbon_high_contrast
-    hi Normal          guifg=#bdcdcd   guibg=#202020
-    hi CursorLine      guifg=NONE      guibg=#292929   gui=NONE
-    hi ColorColumn     guifg=NONE      guibg=#292929
+	hi Normal          guifg=#bdcdcd   guibg=#202020
+	hi CursorLine      guifg=NONE      guibg=#292929   gui=NONE
+	hi ColorColumn     guifg=NONE      guibg=#292929
 else
-    hi Normal          guifg=#bdcdcd   guibg=#303030
-    hi CursorLine      guifg=NONE      guibg=#3a3a3a   gui=NONE
-    hi ColorColumn     guifg=NONE      guibg=#3a3a3a
+	hi Normal          guifg=#bdcdcd   guibg=#303030
+	hi CursorLine      guifg=NONE      guibg=#3a3a3a   gui=NONE
+	hi ColorColumn     guifg=NONE      guibg=#3a3a3a
 endif
 
 " 1}}}

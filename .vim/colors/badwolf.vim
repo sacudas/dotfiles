@@ -1,6 +1,4 @@
-
-<!-- saved from url=(0060)https://raw.github.com/sjl/badwolf/master/colors/badwolf.vim -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">"      _               _                 _  __
+"      _               _                 _  __
 "     | |__   __ _  __| | __      _____ | |/ _|
 "     | '_ \ / _` |/ _` | \ \ /\ / / _ \| | |_
 "     | |_) | (_| | (_| |  \ V  V / (_) | |  _|
@@ -650,4 +648,3 @@ call s:HL('VimBracket', 'dress', '', 'none')
 
 " }}}
 
-</pre></body></html>

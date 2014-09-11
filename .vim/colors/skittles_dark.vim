@@ -14,10 +14,10 @@ hi clear
 
 set background=dark
 if version > 580
-    hi clear
-    if exists("syntax_on")
-        syntax reset
-    endif
+	hi clear
+	if exists("syntax_on")
+		syntax reset
+	endif
 endif
 let g:colors_name="skittles_dark"
 
@@ -93,10 +93,10 @@ hi SpecialComment guifg=#465457 ctermfg=239
 hi Special guifg=#66D9EF ctermfg=81 guibg=bg
 "gui=italic
 if has("spell")
-    hi SpellBad guisp=#FF0000 gui=undercurl
-    hi SpellCap guisp=#7070F0 gui=undercurl
-    hi SpellLocal guisp=#70F0F0 gui=undercurl
-    hi SpellRare guisp=#FFFFFF gui=undercurl
+	hi SpellBad guisp=#FF0000 gui=undercurl
+	hi SpellCap guisp=#7070F0 gui=undercurl
+	hi SpellLocal guisp=#70F0F0 gui=undercurl
+	hi SpellRare guisp=#FFFFFF gui=undercurl
 endif
 "hi Statement guifg=#8ac6f2 ctermfg=117 gui=bold
 hi Statement guifg=#C01414 ctermfg=1 gui=none

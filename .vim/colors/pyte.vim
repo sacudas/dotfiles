@@ -3,26 +3,26 @@ set background=light
 
 hi clear
 if exists("syntax_on")
-  syntax reset
+	syntax reset
 endif
 
 let colors_name = "pyte"
 
 if version >= 700
-  hi CursorLine guibg=#f6f6f6
-  hi CursorColumn guibg=#eaeaea
-  hi MatchParen guifg=white guibg=#80a090 gui=bold
+	hi CursorLine guibg=#f6f6f6
+	hi CursorColumn guibg=#eaeaea
+	hi MatchParen guifg=white guibg=#80a090 gui=bold
 
-  "Tabpages
-  hi TabLine guifg=black guibg=#b0b8c0 gui=italic
-  hi TabLineFill guifg=#9098a0
-  hi TabLineSel guifg=black guibg=#f0f0f0 gui=italic,bold
+	"Tabpages
+	hi TabLine guifg=black guibg=#b0b8c0 gui=italic
+	hi TabLineFill guifg=#9098a0
+	hi TabLineSel guifg=black guibg=#f0f0f0 gui=italic,bold
 
-  "P-Menu (auto-completion)
-  hi Pmenu guifg=white guibg=#808080
-  "PmenuSel
-  "PmenuSbar
-  "PmenuThumb
+	"P-Menu (auto-completion)
+	hi Pmenu guifg=white guibg=#808080
+	"PmenuSel
+	"PmenuSbar
+	"PmenuThumb
 endif
 "
 " Html-Titles
@@ -49,7 +49,7 @@ hi Comment   guifg=#a0b0c0               gui=italic
 
 " Konstanten
 hi Constant  guifg=#a07040
-hi String    guifg=#4070a0 
+hi String    guifg=#4070a0
 hi Number    guifg=#40a070
 hi Float     guifg=#70a040
 "hi Statement guifg=#0070e0 gui=NONE
@@ -81,8 +81,8 @@ hi Special    guifg=#70a0d0 gui=italic
 
 hi Operator   guifg=#408010
 
-" color of <TAB>s etc...  
-"hi SpecialKey guifg=#d8a080 guibg=#e8e8e8 gui=italic  
+" color of <TAB>s etc...
+"hi SpecialKey guifg=#d8a080 guibg=#e8e8e8 gui=italic
 hi SpecialKey guifg=#d0b0b0 guibg=#f0f0f0 gui=none
 
 " Diff

@@ -6,7 +6,7 @@
 set background=light
 highlight clear
 if exists("syntax_on")
-    syntax reset
+	syntax reset
 endif
 
 let g:colors_name = "eclipse"
@@ -75,18 +75,17 @@ highlight String     gui=none guifg=#8010a0 guibg=bg      ctermfg=Yellow
 highlight Number     gui=none guifg=#0000ff guibg=bg      ctermfg=White
 
 if !has("gui_running")
-    hi link Float          Number
-    hi link Conditional    Repeat
-    hi link Include        PreProc
-    hi link Macro          PreProc
-    hi link PreCondit      PreProc
-    hi link StorageClass   Type
-    hi link Structure      Type
-    hi link Typedef        Type
-    hi link Tag            Special
-    hi link Delimiter      Normal
-    hi link SpecialComment Special
-    hi link Debug          Special
+	hi link Float          Number
+	hi link Conditional    Repeat
+	hi link Include        PreProc
+	hi link Macro          PreProc
+	hi link PreCondit      PreProc
+	hi link StorageClass   Type
+	hi link Structure      Type
+	hi link Typedef        Type
+	hi link Tag            Special
+	hi link Delimiter      Normal
+	hi link SpecialComment Special
+	hi link Debug          Special
 endif
 
-" vim:ff=unix:
