@@ -7,6 +7,7 @@
 # Initilize the git submodules
 # and update them!
 printf "Initilize repo submodules!\n"
+git submodule deinit . > /dev/null 2>&1
 git submodule init > /dev/null 2>&1
 git submodule update > /dev/null 2>&1
 
