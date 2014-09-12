@@ -33,6 +33,10 @@ read GIT_NAME
 printf "Git Email [Default: $(git config --global user.email)]:"
 read GIT_EMAIL
 
+# Ask if we need to compile YouCompleteMe!
+printf "Compile YouCompleteMe? [Y/n]:"
+read COMPILE_YCM
+
 # Save the GIT_NAME
 if [ "$GIT_NAME" != "" ]; then
 	printf "Save the GIT_NAME: $GIT_NAME\n"
@@ -57,10 +61,12 @@ vim +BundleUpdate +qall > /dev/null 2>&1
 printf "Copy the VIMRC file after bundle install so that we don't get errors!\n"
 cp -r .vimrc             ~/
 
-# Go to the YouCompleteMe DIR and compile and install it!
-printf "Go to the YouCompleteMe DIR and compile and install it!\n"
-printf "This will also take a while, depending on CPU speed AND connection speed!\n"
-~/.vim/bundle/YouCompleteMe/install.sh --clang-completer > /dev/null 2>&1
+if [ "$COMPILE_YCM" != "n" ]; then
+	# Go to the YouCompleteMe DIR and compile and install it!
+	printf "Go to the YouCompleteMe DIR and compile and install it!\n"
+	printf "This will also take a while, depending on CPU speed AND connection speed!\n"
+	~/.vim/bundle/YouCompleteMe/install.sh --clang-completer > /dev/null 2>&1
+fi
 
 # Install done! WEW!
 printf "Install DONE! WEW!\n"
