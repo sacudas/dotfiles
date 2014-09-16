@@ -64,13 +64,7 @@ set wildmode=full
 
 " Ignore compiled files AND VCS files for git, mercurial and svn, these are
 " the more common VCS that i use in my projects
-set wildignore=*.o,*~,*.pyc
-
-if has("win16") || has("win32")
-	set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
-else
-	set wildignore+=.git\*,.hg\*,.svn\*
-endif
+set wildignore=*.o,*~,*.pyc,.git\*,.hg\*,.svn\*,vendor\*,public\vendor\*
 
 " Ignore case when searching
 set ignorecase
