@@ -5,6 +5,7 @@ source ~/.vim/rc/vundle.vim
 source ~/.vim/rc/airline.vim
 source ~/.vim/rc/ctrlp.vim
 source ~/.vim/rc/gitgutter.vim
+source ~/.vim/rc/nerdtree.vim
 source ~/.vim/rc/pdv.vim
 source ~/.vim/rc/promptline.vim
 source ~/.vim/rc/ultisnips.vim
