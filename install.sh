@@ -50,7 +50,7 @@ printf "Save the GIT_EMAIL: $GIT_EMAIL\n"
 fi
 
 # Setup the vimrc for temporary use!
-echo "source ~/.vim/vimrc/vundle.vim" > ~/.vimrc
+echo "source ~/.vim/rc/vundle.vim" > ~/.vimrc
 
 # Install Vim Plugins
 printf "Install Vim Plugins, Will take a while depending on connection speed!\n"
