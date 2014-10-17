@@ -16,6 +16,9 @@ export PATH=$PATH":${HOME}/.sdks/android/platform-tools/"
 # add my android sdk as ANDROID_HOME so that android studio will work nicely
 export ANDROID_HOME="${HOME}/.sdks/android/"
 
+# JAVA! WHERE DO YOU LIVE?
+export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64/"
+
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
