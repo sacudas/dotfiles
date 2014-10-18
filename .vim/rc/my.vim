@@ -64,7 +64,7 @@ set wildmode=full
 
 " Ignore compiled files AND VCS files for git, mercurial and svn, these are
 " the more common VCS that i use in my projects
-set wildignore=*.o,*~,*.pyc,.git\*,.hg\*,.svn\*,vendor\*,public\vendor\*,bower_components\*,node_modules\*
+set wildignore=*.o,*~,*.pyc,.git\*,.hg\*,.svn\*,vendor\*,public\vendor\*,bower_components\*,node_modules\*,flatforms\android\*,flatforms\ios\*
 
 " Ignore case when searching
 set ignorecase
