@@ -5,7 +5,8 @@ if $COLORTERM == 'mate-terminal' || $COLORTERM == 'gnome-terminal'
 endif
 
 " Now that we have 256bit color, we can set our colorscheme
-color vimtana
+" color vimtana
+color molokai
 
 " Turn on auto indention and make it smart! :)
 set autoindent
