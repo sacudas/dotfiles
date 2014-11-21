@@ -7,9 +7,9 @@
 # Initilize the git submodules
 # and update them!
 printf "Initilize repo submodules!\n"
-git submodule deinit . > /dev/null 2>&1
-git submodule init > /dev/null 2>&1
-git submodule update > /dev/null 2>&1
+git submodule deinit .
+git submodule init
+git submodule update
 
 # Copy all the files needed
 printf "Copy all the files needed\n"
@@ -54,8 +54,8 @@ echo "source ~/.vim/rc/vundle.vim" > ~/.vimrc
 
 # Install Vim Plugins
 printf "Install Vim Plugins, Will take a while depending on connection speed!\n"
-vim +BundleClean +qall > /dev/null 2>&1
-vim +BundleUpdate +qall > /dev/null 2>&1
+vim +BundleClean +qall
+vim +BundleUpdate +qall
 
 # Copy the VIMRC file after bundle install so that we don't get errors!
 printf "Copy the VIMRC file after bundle install so that we don't get errors!\n"
@@ -65,7 +65,7 @@ if [ "$COMPILE_YCM" != "n" ]; then
 	# Go to the YouCompleteMe DIR and compile and install it!
 	printf "Go to the YouCompleteMe DIR and compile and install it!\n"
 	printf "This will also take a while, depending on CPU speed AND connection speed!\n"
-	~/.vim/bundle/YouCompleteMe/install.sh --clang-completer > /dev/null 2>&1
+	~/.vim/bundle/YouCompleteMe/install.sh --clang-completer
 fi
 
 # Install done! WEW!
