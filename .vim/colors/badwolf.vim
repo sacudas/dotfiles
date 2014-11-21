@@ -31,7 +31,7 @@
 " Supporting code -------------------------------------------------------------
 " Preamble {{{
 
-if !has("gui_running") &amp;&amp; &amp;t_Co != 88 &amp;&amp; &amp;t_Co != 256
+if !has("gui_running") && &t_Co != 88 && &t_Co != 256
     finish
 endif
 
@@ -123,7 +123,7 @@ function! s:HL(group, fg, ...)
         endif
     endif
 
-    if a:0 &gt;= 1 &amp;&amp; strlen(a:1)
+    if a:0 >= 1 && strlen(a:1)
         if a:1 == 'bg'
             let histring .= 'guibg=bg ctermbg=bg '
         else
@@ -132,11 +132,11 @@ function! s:HL(group, fg, ...)
         endif
     endif
 
-    if a:0 &gt;= 2 &amp;&amp; strlen(a:2)
+    if a:0 >= 2 && strlen(a:2)
         let histring .= 'gui=' . a:2 . ' cterm=' . a:2 . ' '
     endif
 
-    if a:0 &gt;= 3 &amp;&amp; strlen(a:3)
+    if a:0 >= 3 && strlen(a:3)
         let c = get(s:bwc, a:3)
         let histring .= 'guisp=#' . c[0] . ' '
     endif
@@ -148,7 +148,7 @@ endfunction
 " }}}
 " Configuration Options {{{
 
-if exists('g:badwolf_darkgutter') &amp;&amp; g:badwolf_darkgutter
+if exists('g:badwolf_darkgutter') && g:badwolf_darkgutter
     let s:gutter = 'blackestgravel'
 else
     let s:gutter = 'blackgravel'
@@ -338,7 +338,7 @@ endif
     " the matched pattern
     call s:HL('CtrlPMatch', 'orange', 'bg', 'none')
 
-    " the line prefix '&gt;' in the match window
+    " the line prefix '>' in the match window
     call s:HL('CtrlPLinePre', 'deepgravel', 'bg', 'none')
 
     " the prompt’s base
@@ -375,7 +375,7 @@ call s:HL('EasyMotionShade',  'deepgravel', 'bg')
 " }}}
 " Interesting Words {{{
 
-" These are only used if you're me or have copied the &lt;leader&gt;hNUM mappings
+" These are only used if you're me or have copied the <leader>hNUM mappings
 " from my Vimrc.
 call s:HL('InterestingWord1', 'coal', 'orange')
 call s:HL('InterestingWord2', 'coal', 'lime')
@@ -502,7 +502,7 @@ call s:HL('htmlSpecialChar',    'lime',   '', 'none')
 " Attributes
 call s:HL('htmlArg', 'coffee', '', 'none')
 
-" Stuff inside an &lt;a&gt; tag
+" Stuff inside an <a> tag
 
 if g:badwolf_html_link_underline
     call s:HL('htmlLink', 'lightgravel', '', 'underline')
@@ -542,8 +542,8 @@ call s:HL('texZone', 'brightgravel', '', 'none')
 augroup badwolf_tex
     au!
 
-    au BufRead,BufNewFile *.tex syn region texMathZoneV start="\\(" end="\\)\|%stopzone\&gt;" keepend contains=@texMathZoneGroup
-    au BufRead,BufNewFile *.tex syn region texMathZoneX start="\$" skip="\\\\\|\\\$" end="\$\|%stopzone\&gt;" keepend contains=@texMathZoneGroup
+    au BufRead,BufNewFile *.tex syn region texMathZoneV start="\\(" end="\\)\|%stopzone\>" keepend contains=@texMathZoneGroup
+    au BufRead,BufNewFile *.tex syn region texMathZoneX start="\$" skip="\\\\\|\\\$" end="\$\|%stopzone\>" keepend contains=@texMathZoneGroup
 augroup END
 
 " }}}
