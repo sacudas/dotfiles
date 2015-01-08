@@ -13,6 +13,9 @@ export PATH=$PATH":${HOME}/.sdks/android/tools/"
 # add my android platform tools to the path
 export PATH=$PATH":${HOME}/.sdks/android/platform-tools/"
 
+# Add GLOBAL composer to PATH so we can use it in BASH!
+export PATH=$PATH":${HOME}/.composer/vendor/bin/"
+
 # add my android sdk as ANDROID_HOME so that android studio will work nicely
 export ANDROID_HOME="${HOME}/.sdks/android/"
 
