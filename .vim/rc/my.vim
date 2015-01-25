@@ -19,6 +19,10 @@ set scrolloff=8
 " Add a bit extra margin to the left
 set foldcolumn=1
 
+" Make sure that we have a text guide for typing at only 80 chars MAX...
+set textwidth=78
+set colorcolumn=80
+
 " Turn backup off, since most stuff is in SVN, git ,etc.. anyway...
 set nobackup
 set nowb
