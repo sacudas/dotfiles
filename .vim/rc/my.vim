@@ -145,11 +145,11 @@ vno		<left>	<Nop>
 vno		<right>	<Nop>
 vno		<up>	<Nop>
 
-" Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
-nmap	<M-j>	mz:m+<cr>`z
-nmap	<M-k>	mz:m-2<cr>`z
-vmap	<M-j>	:m'>+<cr>`<my`>mzgv`yo`z
-vmap	<M-k>	:m'<-2<cr>`>my`<mzgv`yo`z
+" Move a line of text using CTRL+ALT+[jk] or CTRL+Command+[jk] on mac
+nmap	<C-M-j>	mz:m+<cr>`z
+nmap	<C-M-k>	mz:m-2<cr>`z
+vmap	<C-M-j>	:m'>+<cr>`<my`>mzgv`yo`z
+vmap	<C-M-k>	:m'<-2<cr>`>my`<mzgv`yo`z
 
 " Visual mode pressing * or # searches for the current selection
 " Super useful! From an idea by Michael Naumann
@@ -162,51 +162,28 @@ map		<C-k>	<C-W>k
 map		<C-h>	<C-W>h
 map		<C-l>	<C-W>l
 
-" map Ctrl+\ to open the tag in a new tab
-no		<C-\>			:tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-
-" Convert Selenium selenese test into PHPUnit Selenium RC
-no		<leader>csw		:%s/\t//g<CR>:%s/\n//g<CR>:%s/\(.*\)<title>\(.*\)<\/title>\(.*\)<tbody>\(.*\)<\/tbody>\(.*\)/<?php\r<!--require the Sauceium.php file-->require_once "PHPUnit\/Extensions\/Sauceium.php";\r\rclass WU_\2\ Extends PHPUnit_Extensions_Sauceium {\r\rpublic function test_wu_\2() {\r<!--function_start-->\4<!--function_end-->}\r}\r/g<CR>:%s/<!--/\r<!--/g<CR>:%s/<!--\(.*\)-->/\/\/ \1\r/g<CR>:g/'/s/'/\\'/g<CR>:%s/<\/tr>/<\/tr>\r/g<CR>:%s/<tr><td>\(.*\)<\/td><td>\(.*\)<\/td><td>\(.*\)<\/td><\/tr>/\$this->\1('\2', '\3');\r/g<CR>:g/$this->open/s/&amp;/\&/g<CR>:g/$this->.*(.*, '+.*');/s/+/\\+/g<CR>:g/verify/s/verify/assert/g<CR>:g/assertLocation/s/assert/waitFor/g<CR>:g/$this->echo/s/\(.*\)/\/\/ \1/g<CR>:g/&[a-zA-Z]\+;/s/$this->\(.*\)('\(.*\)', '\(.*\)');/$this->\1(html_entity_decode('\2'), '\3');/g<CR>:%s/, ''//g<CR>:g/$this->pause/s/$this->pause(.*'\(.[0-9]*\).*');/usleep(\1000);/g<CR>:set filetype=php<CR>gg=G
-
-" Remove all trailing whitespace
-no		<leader>r		:g/\s\+$/s/\s\+$//g<CR>
-
 " map leader+o to CtrlPTag search
 no		<leader>o		:CtrlPTag<CR>
 
 " map leader+i
 no		<leader>i		:TagbarToggle<CR>
 
-" map leader+ct to generate tags for the current PWD and place the file in
-" our git directory so that it does not get seen by git status
-no		<leader>ct		:Ctags
-
-" Fast saving
-nmap	<leader>w		:w!<CR>
-
-" Create a command for generating ctags in the current working directory
-command Ctags !ctags -R --fields=+l -f ./tags ./ >/dev/null 2>&1 &
-
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
 " Lets make sure we are using the right omnifunc for PHP
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType c          set omnifunc=ccomplete#Complete
+autocmd FileType cpp        set omnifunc=cppcomplete#CompleteCPP
+autocmd FileType css        set omnifunc=csscomplete#CompleteCSS
+autocmd FileType html       set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
-autocmd FileType python set omnifunc=pythoncomplete#Complete
-autocmd FileType c set omnifunc=ccomplete#Complete
-autocmd FileType cpp set omnifunc=cppcomplete#CompleteCPP
+autocmd FileType php        set omnifunc=phpcomplete#CompletePHP
+autocmd FileType python     set omnifunc=pythoncomplete#Complete
+autocmd FileType xml        set omnifunc=xmlcomplete#CompleteTags
 
 " lets clean the file before we save it!
 autocmd BufWritePre,FileWritePre * :g/\s\+$/s/\s\+$//g
-
-" lets generate the tags file when we make changes to a file
-" Disable the Auto ctags generation as was not working correctly for me
-"autocmd BufWritePost,FileWritePost * silent :Ctags
 
 " FUNCTION FOR VISUAL SECTION SEARCHING
 function! VisualSelection(direction, extra_filter) range

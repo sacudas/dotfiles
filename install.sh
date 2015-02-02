@@ -1,8 +1,20 @@
-#!/bin/sh
+#!/bin/bash
 
 # This is a very basic install script
 # that i use personally, but will soon
 # be updated to be useable by mostly anyone
+
+# Ask what name to use?
+printf "Git Name [Default: $(git config --global user.name)]:"
+read GIT_NAME
+
+# Ask what email to use?
+printf "Git Email [Default: $(git config --global user.email)]:"
+read GIT_EMAIL
+
+# Ask if we need to compile YouCompleteMe!
+printf "Compile YouCompleteMe? [Y/n]:"
+read COMPILE_YCM
 
 # Initilize the git submodules
 # and update them!
@@ -24,18 +36,6 @@ cp -r .promptline.sh     ~/
 cp -r .ssh/              ~/
 cp -r .tmux.conf         ~/
 cp -r .vim/              ~/
-
-# Ask what name to use?
-printf "Git Name [Default: $(git config --global user.name)]:"
-read GIT_NAME
-
-# Ask what email to use?
-printf "Git Email [Default: $(git config --global user.email)]:"
-read GIT_EMAIL
-
-# Ask if we need to compile YouCompleteMe!
-printf "Compile YouCompleteMe? [Y/n]:"
-read COMPILE_YCM
 
 # Save the GIT_NAME
 if [ "$GIT_NAME" != "" ]; then
