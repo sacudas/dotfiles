@@ -172,16 +172,6 @@ no		<leader>i		:TagbarToggle<CR>
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
-" Lets make sure we are using the right omnifunc for PHP
-autocmd FileType c          set omnifunc=ccomplete#Complete
-autocmd FileType cpp        set omnifunc=cppcomplete#CompleteCPP
-autocmd FileType css        set omnifunc=csscomplete#CompleteCSS
-autocmd FileType html       set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType php        set omnifunc=phpcomplete#CompletePHP
-autocmd FileType python     set omnifunc=pythoncomplete#Complete
-autocmd FileType xml        set omnifunc=xmlcomplete#CompleteTags
-
 " lets clean the file before we save it!
 autocmd BufWritePre,FileWritePre * :g/\s\+$/s/\s\+$//g
 
