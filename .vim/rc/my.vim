@@ -162,6 +162,12 @@ map		<C-k>	<C-W>k
 map		<C-h>	<C-W>h
 map		<C-l>	<C-W>l
 
+" Quick command to remove all GIT conflicts from merged branch
+no      <leader>g            :%s/\([=]\{7\}\)\(\_.\{-\}[>]\{7\}.*\n\)//g<CR>:%s/\([<]\{7\}.*\n\)//g<CR>
+
+" Quick command to remove all GIT conflicts from merged branch
+no      <leader>G            :%s/\([<]\{7\} HEAD\)\(\_.\{-\}[=]\{7\}\n\)//g<CR>:%s/\([>]\{7\}.*\n\)//g<CR>
+
 " map leader+o to CtrlPTag search
 no		<leader>o		:CtrlPTag<CR>
 
