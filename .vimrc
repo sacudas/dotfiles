@@ -11,8 +11,8 @@ source ~/.vim/rc/promptline.vim
 source ~/.vim/rc/ultisnips.vim
 source ~/.vim/rc/ycm.vim
 
-" DISABLED configs!
-"source ~/.vim/rc/vdebug.vim
+" Load language specific configs
+source ~/.vim/rc/lang/php.vim
 
 " Load MY.VIM LAST! so that we can override other configs
 source ~/.vim/rc/my.vim

@@ -82,7 +82,7 @@ set mouse=a
 
 " Enable system clipboard IF TMUX is not used
 if $TMUX == ''
-    set clipboard+=unnamed
+	set clipboard+=unnamed
 endif
 
 " Set encoded character set
@@ -131,48 +131,42 @@ syntax on
 filetype plugin on
 filetype indent on
 
-" Disable arrow keys
-no		<down>	<Nop>
-no		<left>	<Nop>
-no		<right>	<Nop>
-no		<up>	<Nop>
-ino		<down>	<Nop>
-ino		<left>	<Nop>
-ino		<right>	<Nop>
-ino		<up>	<Nop>
-vno		<down>	<Nop>
-vno		<left>	<Nop>
-vno		<right>	<Nop>
-vno		<up>	<Nop>
-
-" Move a line of text using CTRL+ALT+[jk] or CTRL+Command+[jk] on mac
-nmap	<C-M-j>	mz:m+<cr>`z
-nmap	<C-M-k>	mz:m-2<cr>`z
-vmap	<C-M-j>	:m'>+<cr>`<my`>mzgv`yo`z
-vmap	<C-M-k>	:m'<-2<cr>`>my`<mzgv`yo`z
+" Disable arrow keys and use UP and DOWN for code movement
+no  <down>  mz:m+<CR>`z
+no  <left>  <Nop>
+no  <right> <Nop>
+no  <up>    mz:m-2<CR>`z
+ino <down>  <Esc><Esc>mz:m+<CR>`z
+ino <left>  <Nop>
+ino <right> <Nop>
+ino <up>    <Esc><Esc>mz:m-2<CR>`z
+vno <down>  :m'>+<CR>`<my`>mzgv`yo`z
+vno <left>  <Nop>
+vno <right> <Nop>
+vno <up>    :m'<-2<CR>`>my`<mzgv`yo`z
 
 " Visual mode pressing * or # searches for the current selection
 " Super useful! From an idea by Michael Naumann
-vno		<silent>	*	:call VisualSelection('f', '')<CR>
-vno		<silent>	#	:call VisualSelection('b', '')<CR>
+vno <silent> * :call VisualSelection('f', '')<CR>
+vno <silent> # :call VisualSelection('b', '')<CR>
 
 " Smart way to move between windows
-map		<C-j>	<C-W>j
-map		<C-k>	<C-W>k
-map		<C-h>	<C-W>h
-map		<C-l>	<C-W>l
+no <C-j> <C-W>j
+no <C-k> <C-W>k
+no <C-h> <C-W>h
+no <C-l> <C-W>l
 
 " Quick command to remove all GIT conflicts from merged branch
-no      <leader>g            :%s/\([=]\{7\}\)\(\_.\{-\}[>]\{7\}.*\n\)//g<CR>:%s/\([<]\{7\}.*\n\)//g<CR>
+no <leader>g :%s/\([=]\{7\}\)\(\_.\{-\}[>]\{7\}.*\n\)//g<CR>:%s/\([<]\{7\}.*\n\)//g<CR>
 
 " Quick command to remove all GIT conflicts from merged branch
-no      <leader>G            :%s/\([<]\{7\} HEAD\)\(\_.\{-\}[=]\{7\}\n\)//g<CR>:%s/\([>]\{7\}.*\n\)//g<CR>
+no <leader>G :%s/\([<]\{7\} HEAD\)\(\_.\{-\}[=]\{7\}\n\)//g<CR>:%s/\([>]\{7\}.*\n\)//g<CR>
 
 " map leader+o to CtrlPTag search
-no		<leader>o		:CtrlPTag<CR>
+no <leader>o :CtrlPTag<CR>
 
 " map leader+i
-no		<leader>i		:TagbarToggle<CR>
+no <leader>i :TagbarToggle<CR>
 
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
