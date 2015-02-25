@@ -145,6 +145,9 @@ vno <left>  <Nop>
 vno <right> <Nop>
 vno <up>    :m'<-2<CR>`>my`<mzgv`yo`z
 
+" Turn off Ex-Mode permanently
+no Q <nop>
+
 " Visual mode pressing * or # searches for the current selection
 " Super useful! From an idea by Michael Naumann
 vno <silent> * :call VisualSelection('f', '')<CR>
