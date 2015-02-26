@@ -32,15 +32,15 @@ read COMPILE_YCM
 if [ ! -d ~/.vim/bundle ]
 then
 	# the ~/.vim/bundle DIR does not exist, so we will it to exist
-	mkdir -p "~/.vim/bundle"
+	mkdir -p ~/.vim/bundle
 fi
 
 # Check if our plugin manager is installed
-if [ ! -d ~/.vim/bundle/vundle ]
+if [ ! -d ~/.vim/bundle/Vundle.vim ]
 then
 	# Install our plugin manager
-	printf "Install our plugin manager"
-	git clone "https://github.com/gmarik/Vundle.vim.git" "~/.vim/bundle/vundle"
+	printf "Install our plugin manager\n"
+	git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
 # Copy all the files needed
