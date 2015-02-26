@@ -165,12 +165,6 @@ no <leader>g :%s/\([=]\{7\}\)\(\_.\{-\}[>]\{7\}.*\n\)//g<CR>:%s/\([<]\{7\}.*\n\)
 " Quick command to remove all GIT conflicts from merged branch
 no <leader>G :%s/\([<]\{7\} HEAD\)\(\_.\{-\}[=]\{7\}\n\)//g<CR>:%s/\([>]\{7\}.*\n\)//g<CR>
 
-" map leader+o to CtrlPTag search
-no <leader>o :CtrlPTag<CR>
-
-" map leader+i
-no <leader>i :TagbarToggle<CR>
-
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
