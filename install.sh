@@ -33,14 +33,14 @@ if [ ! -d ~/.vim/bundle ]
 then
 	# the ~/.vim/bundle DIR does not exist, so we will it to exist
 	mkdir -p "~/.vim/bundle"
+fi
 
-	# Check if our plugin manager is installed
-	if [ ! -d ~/.vim/bundle/vundle ]
-	then
-		# Install our plugin manager
-		printf "Install our plugin manager"
-		git clone "https://github.com/gmarik/Vundle.vim.git" "~/.vim/bundle/vundle"
-	fi
+# Check if our plugin manager is installed
+if [ ! -d ~/.vim/bundle/vundle ]
+then
+	# Install our plugin manager
+	printf "Install our plugin manager"
+	git clone "https://github.com/gmarik/Vundle.vim.git" "~/.vim/bundle/vundle"
 fi
 
 # Copy all the files needed
