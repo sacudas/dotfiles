@@ -24,6 +24,10 @@ if [ "$GIT_EMAIL" != "" ]; then
 	git config --global user.email "$GIT_EMAIL"
 fi
 
+# Ask if we want to update the plugins...
+printf "Update Bundles/Plugins? [Y/n]:"
+read UPDATE_BUNDLES
+
 # Ask if we need to compile YouCompleteMe!
 printf "Compile YouCompleteMe? [Y/n]:"
 read COMPILE_YCM
@@ -57,17 +61,20 @@ cp -r .ssh/              ~/
 cp -r .tmux.conf         ~/
 cp -r .vim/              ~/
 
-# Setup the vimrc for temporary use!
-echo "source ~/.vim/rc/plugins/vundle.vim" > ~/.vimrc
+if [ "$UPDATE_BUNDLES" != "n" ]; then
+	# Setup the vimrc for temporary use!
+	echo "source ~/.vim/rc/plugins/vundle.vim" > ~/.vimrc
 
-# Install Vim Plugins
-printf "Install Vim Plugins, Will take a while depending on connection speed!\n"
-vim +BundleClean +qall
-vim +BundleUpdate +qall
+	# Install Vim Plugins
+	printf "Install Vim Plugins, Will take a while depending on connection speed!\n"
+	vim +BundleClean +qall
+	vim +BundleUpdate +qall
 
-# Copy the VIMRC file after bundle install so that we don't get errors!
-printf "Copy the VIMRC file after bundle install so that we don't get errors!\n"
-cp -r .vimrc             ~/
+
+	# Copy the VIMRC file after bundle install so that we don't get errors!
+	printf "Copy the VIMRC file after bundle install so that we don't get errors!\n"
+	cp -r .vimrc             ~/
+fi
 
 if [ "$COMPILE_YCM" != "n" ]; then
 	# Go to the YouCompleteMe DIR and compile and install it!

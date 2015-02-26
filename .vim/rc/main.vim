@@ -50,6 +50,9 @@ set noshowmode
 set backspace=
 
 " We need line numbers right? :)
+" BUT WAIT, THERE'S MORE! Line numbers that make SENSE for NORMAL MODE and
+" INSERT MODE? YEAH, WE GOTZ THIZZ SHIZZZ>>>>>
+set relativenumber
 set number
 
 " Turn on the ruler so that we can always see the cursor position
