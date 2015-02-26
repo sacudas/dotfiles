@@ -46,6 +46,9 @@ set nocompatible
 " lets hide the mode as we are using vim-airline for this :)
 set noshowmode
 
+" Use the BETTER BackSpace behavior! :P
+set backspace=
+
 " We need line numbers right? :)
 set number
 

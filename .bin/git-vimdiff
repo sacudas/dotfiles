@@ -1,3 +1,2 @@
 #!/bin/sh
-#echo $*
-vimdiff -c 'set diffopt+=iwhite' "$1" "$2"
+vim -d -c 'set diffopt+=iwhite' "$1" "$2"
