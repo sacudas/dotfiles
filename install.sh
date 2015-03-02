@@ -49,18 +49,18 @@ fi
 
 # Copy all the files needed
 printf "Copy all the files needed\n"
-cp                      .bash_profile      ~/.bash_profile
-cp                      .bashrc            ~/.bashrc
-cp -r                   .bin/              ~/.bin/
-cp -r                   .config/           ~/.config/
-cp                      .ctags             ~/.ctags
-cp -r                   .fonts/            ~/.fonts/
-cp                      .gitconfig         ~/.gitconfig
-cp                      .promptline.sh     ~/.promptline.sh
-cp -r                   .ssh/              ~/.ssh/
-cp                      .tmux.conf         ~/.tmux.conf
-cp -r                   .vim/              ~/.vim/
-cp -r --preserve=links  .nvim              ~/.nvim
+cp                      .bash_profile      ~/
+cp                      .bashrc            ~/
+cp -r                   .bin/              ~/
+cp -r                   .config/           ~/
+cp                      .ctags             ~/
+cp -r                   .fonts/            ~/
+cp                      .gitconfig         ~/
+cp                      .promptline.sh     ~/
+cp -r                   .ssh/              ~/
+cp                      .tmux.conf         ~/
+cp -r                   .vim/              ~/
+cp -r --preserve=links  .nvim              ~/
 
 if [ "$UPDATE_BUNDLES" != "n" ]; then
 	# Setup the vimrc for temporary use!
@@ -74,8 +74,8 @@ if [ "$UPDATE_BUNDLES" != "n" ]; then
 
 	# Copy the VIMRC file after bundle install so that we don't get errors!
 	printf "Copy the VIMRC file after bundle install so that we don't get errors!\n"
-	cp                  .vimrc             ~/.vimrc
-	cp --preserve=links .nvimrc            ~/.nvimrc
+	cp                  .vimrc             ~/
+	cp --preserve=links .nvimrc            ~/
 fi
 
 if [ "$COMPILE_YCM" != "n" ]; then
