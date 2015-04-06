@@ -23,8 +23,7 @@ set foldcolumn=1
 set textwidth=78
 set colorcolumn=80
 
-" Turn backup off, since most stuff is in SVN, git ,etc.. anyway...
-set nobackup
+" Turn backup off, since most stuff is in SVN, git ,etc.. anyway...  set nobackup
 set nowb
 set noswapfile
 
@@ -168,12 +167,41 @@ no <leader>g :%s/\([=]\{7\}\)\(\_.\{-\}[>]\{7\}.*\n\)//g<CR>:%s/\([<]\{7\}.*\n\)
 " Quick command to remove all GIT conflicts from merged branch
 no <leader>G :%s/\([<]\{7\} HEAD\)\(\_.\{-\}[=]\{7\}\n\)//g<CR>:%s/\([>]\{7\}.*\n\)//g<CR>
 
+" Map Convert PRE php 5.4 array syntax to new 5.4+ syntax...
+no <leader>as :call PHPShortHandArrayConverter()<CR>
+
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
 " lets clean the file before we save it!
 autocmd BufWritePre,FileWritePre * :g/\s\+$/s/\s\+$//g
+
+" FUNCTION to Convert PRE php 5.4 array syntax to new 5.4+ syntax...
+function! PHPShortHandArrayConverter() range
+	" We need a place to store the count...
+	" Count the number of matches
+	let l:count=[0] | %s/[aA]rray\(.*\)(\zs/\=map(l:count,'v:val+1')[1:]/ge
+
+	" Replace empty arrays first
+	execute "normal :%s/[aA]rray\(.*\)()/[]/ge\<CR>"
+
+	" Check if we have more than 1
+	while l:count[0] > 0
+		" Find the instances
+		execute "normal gg?[aA]rray\\(.*\\)(\<CR>"
+
+		" Remove the array word
+		execute "normal dwa\<CR>"
+
+		" raplace ( with [
+		execute "normal cs(]"
+
+		" We need a place to store the count...
+		" Count the number of matches
+		let l:count=[0] | %s/[aA]rray\(.*\)(\zs/\=map(l:count,'v:val+1')[1:]/ge
+	endwhile
+endfunction
 
 " FUNCTION FOR VISUAL SECTION SEARCHING
 function! VisualSelection(direction, extra_filter) range
