@@ -55,8 +55,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # Alias for ubuntu software updates
-alias upbuntu='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get
-dist-upgrade -y && sudo apt-get autoclean -y && sudo apt-get autoremove -y'
+alias upbuntu='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get autoclean -y && sudo apt-get autoremove -y'
 
 # enable programmable completion features
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
