@@ -12,6 +12,7 @@ Plugin 'gmarik/Vundle.vim'
 " My Bundles here:
 "
 " original repos on github
+Plugin 'KabbAmine/vCoolor.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'SirVer/ultisnips'
 Plugin 'Valloric/YouCompleteMe'
