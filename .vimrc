@@ -10,6 +10,7 @@ source ~/.vim/rc/plugins/pdv.vim
 source ~/.vim/rc/plugins/promptline.vim
 source ~/.vim/rc/plugins/ultisnips.vim
 source ~/.vim/rc/plugins/ycm.vim
+source ~/.vim/rc/plugins/colorizer.vim
 
 " Load language specific configs
 source ~/.vim/rc/lang/php.vim
