@@ -170,6 +170,12 @@ no <leader>G :%s/\([<]\{7\} HEAD\)\(\_.\{-\}[=]\{7\}\n\)//g<CR>:%s/\([>]\{7\}.*\
 " Map Convert PRE php 5.4 array syntax to new 5.4+ syntax...
 no <leader>as :call PHPShortHandArrayConverter()<CR>
 
+" Insert the current file's name!
+no <leader>fn a<C-R>=expand("%:t:r")<CR><ESC>
+
+" Insert the current file's name!
+vno <leader>fn s<C-R>=expand("%:t:r")<CR><ESC>
+
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
