@@ -19,8 +19,20 @@ export PATH=$PATH":${HOME}/.composer/vendor/bin/"
 # add my android sdk as ANDROID_HOME so that android studio will work nicely
 export ANDROID_HOME="${HOME}/.sdks/android/"
 
-# JAVA! WHERE DO YOU LIVE?
-export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64/"
+
+# Check if we have java 7...
+if [ -d "/usr/lib/jvm/java-7-openjdk-amd64/" ]
+then
+	# JAVA! WHERE DO YOU LIVE?
+	export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64/"
+fi
+
+# Check if we have java 8...
+if [ -d "/usr/lib/jvm/java-8-openjdk-amd64/" ]
+then
+	# JAVA! WHERE DO YOU LIVE?
+	export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/"
+fi
 
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
@@ -63,8 +75,14 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # load up the custom CLI PROMPT
-[[ -s ~/.promptline.sh ]] && source ~/.promptline.sh
+if [ -f ~/.promptline.sh ]
+then
+	source ~/.promptline.sh
+fi
 
 # load the rails bash configs
-[[ -s /etc/profile.d/rvm.sh ]] && source /etc/profile.d/rvm.sh
+if [ -f /etc/profile.d/rvm.sh ]
+then
+	source /etc/profile.d/rvm.sh
+fi
 
