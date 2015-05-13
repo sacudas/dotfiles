@@ -60,7 +60,10 @@ cp                      .promptline.sh     ~/
 cp -r                   .ssh/              ~/
 cp                      .tmux.conf         ~/
 cp -r                   .vim/              ~/
+cp -r                   .harmattan-themes  ~/
+cp -r                   .harmattan-assets  ~/
 cp -r --preserve=links  .nvim              ~/
+cp -r --preserve=links  .conkyrc           ~/
 
 if [ "$UPDATE_BUNDLES" != "n" ]; then
 	# Setup the vimrc for temporary use!

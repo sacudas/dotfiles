@@ -3,6 +3,7 @@ source ~/.vim/rc/plugins/vundle.vim
 
 " Load all our needed files! :D
 source ~/.vim/rc/plugins/airline.vim
+source ~/.vim/rc/plugins/colorizer.vim
 source ~/.vim/rc/plugins/ctrlp.vim
 source ~/.vim/rc/plugins/gitgutter.vim
 source ~/.vim/rc/plugins/nerdtree.vim

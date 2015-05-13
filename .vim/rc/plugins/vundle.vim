@@ -12,11 +12,13 @@ Plugin 'gmarik/Vundle.vim'
 " My Bundles here:
 "
 " original repos on github
+Plugin 'KabbAmine/vCoolor.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'SirVer/ultisnips'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
+Plugin 'chrisbra/Colorizer'
 Plugin 'edkolev/promptline.vim'
 Plugin 'elzr/vim-json'
 Plugin 'gregsexton/gitv'
@@ -24,6 +26,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'mxaddict/pdv'
+Plugin 'mxaddict/vim-blade'
 Plugin 'pangloss/vim-javascript'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/nerdtree'
@@ -36,7 +39,6 @@ Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-scripts/TeTrIs.vim'
 Plugin 'vim-scripts/matchit.zip'
-Plugin 'xsbeats/vim-blade'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required!
